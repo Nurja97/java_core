@@ -25,7 +25,7 @@ public class TypesDemo {
         int u = Integer.MAX_VALUE;
         System.out.println("u " + u);
 */
-        System.out.println("2:");
+        System.out.println("2.");
         byte b2 = Byte.MIN_VALUE;
         byte b3 = Byte.MIN_VALUE;
 
@@ -55,13 +55,13 @@ public class TypesDemo {
 
 
 
-        System.out.println("\n3:");
+        System.out.println("\n3.");
         int i = Integer.MAX_VALUE;
         i = i + 1;
-        System.out.println(i );
+        System.out.println(i);
 
 
-        System.out.println("\n4:");
+        System.out.println("\n4.");
         int a = 7;
         int b = 8;
         int temp = a;
