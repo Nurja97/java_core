@@ -1,4 +1,4 @@
-public class Lesson_2 {
+public class TypesDemo {
     public static void main(String[] args) {
       byte b = 1;
         short s = 1;
