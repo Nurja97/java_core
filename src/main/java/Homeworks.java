@@ -1,6 +1,13 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+
+
 public class Homeworks {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
+/*
         //***Lesson_2***
 
 
@@ -66,13 +73,14 @@ public class Homeworks {
         b = temp;
         System.out.println(a + " " + b);
         System.out.println('a' + " " + 'b');
+*/
 
 
 
         //***Lesson_3***
 
 
-        //1.
+ /*       //1.
         System.out.println("\n1:");
         int number = 472;
         int first = number / 100;          // результат: 4
@@ -111,6 +119,76 @@ public class Homeworks {
         double full = 5 / 2.0;
         System.out.println("5 / 2: " + half); // дробная часть отбрасывается: 2
         System.out.println("5 / 2: " + full); // результат дробный: 2.5
+*/
+
+
+
+        //***Lesson_4***
+
+/*        //1.
+        System.out.print("Введите имя: ");
+        String userName = scanner.nextLine();
+
+        System.out.print("Введите год рождения: ");
+        if (scanner.hasNextInt()) {
+            int age_2 = scanner.nextInt();
+            System.out.println("Привет, " + userName
+                    + ", твой возраст: " + (2026 - age_2));
+        } else {
+            System.out.println("Введите число цифрами");
+        }
+
+
+        //2.
+        //  Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите балл: ");
+
+        Integer i_2;
+        if (scanner.hasNextInt()) {
+            int point = scanner.nextInt();
+
+            if (point < 0 || point > 100) {
+                System.out.println("Ошибка: Баллы должны быть от 0 до 100.");
+            } else if (point > 89) {
+                i_2 = 5;
+                System.out.println(i_2);
+            } else if (point > 74) {
+                i_2 = 4;
+                System.out.println(i_2);
+            } else if (point > 59) {
+                i_2 = 3;
+                System.out.println(i_2);
+            } else {
+                i_2 = 2;
+                System.out.println(i_2);
+            }
+        } else {
+            System.out.println("Ошибка: Введите целое число.");
+        }*/
+
+
+        //3.
+        //Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите первое число: ");
+        double a = scanner.nextDouble();
+
+        System.out.println("Введите второе число: ");
+        double b = scanner.nextDouble();
+
+        System.out.println("Введите операцию (+, -, *, /): ");
+        String c = scanner.next();
+
+        if ( c.equals("/")) {
+            if (a == 0 || b == 0) {
+                System.out.println("Ошибка: число не должно быть равно 0");
+            } else  System.out.println("Результат: " + (a / b));
+        } else if (c.equals("*")){
+            System.out.println("Результат: " + (a * b));
+        } else if ( c.equals("+")) {
+            System.out.print("Результат: " + (a + b));
+        } else if (c.equals("-")){
+            System.out.println("Результат: " + (a - b));
+        }
 
     }
 }

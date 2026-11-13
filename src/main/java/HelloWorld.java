@@ -12,5 +12,8 @@ public class HelloWorld {
 
         System.out.println("Значение переменной = " + i);
         System.out.println("Значение переменной = " + и);
+
+
+
     }
 }
